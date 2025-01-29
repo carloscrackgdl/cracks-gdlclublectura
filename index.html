@@ -29,16 +29,44 @@
             color: #6c5b7b;
             margin-bottom: 10px;
         }
-        .book-list, .progress-list {
-            list-style-type: none;
-            padding: 0;
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .book-list li, .progress-list li {
+        .book {
             background: white;
-            margin: 10px 0;
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: center;
+        }
+        .book img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        .cta-button {
+            display: block;
+            width: 250px;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #355c7d;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
         }
         footer {
             background-color: #355c7d;
@@ -57,38 +85,40 @@
 
     <section>
         <h2 class="section-title">📚 Libros Objetivos del Mes</h2>
-        <ul class="book-list">
-            <li><strong>Hábitos Atómicos</strong> - James Clear<br>Fecha de lectura: 31 de enero al 28 de febrero 2025<br>Número de lectores: <em>0</em> (por actualizar)</li>
-            <li><strong>Líder 360</strong> - John C. Maxwell<br>Fecha de lectura: 31 de enero al 28 de febrero 2025<br>Número de lectores: <em>0</em> (por actualizar)</li>
-        </ul>
+        <div class="book-container">
+            <div class="book">
+                <img src="imagenes/habitos-atomicos.jpg" alt="Hábitos Atómicos">
+                <p><strong>Hábitos Atómicos</strong> - James Clear</p>
+                <p>📅 31 de enero al 28 de febrero 2025</p>
+                <p>📖 Disponible: <a href="https://librerialatina.co/wp-content/uploads/2024/04/HABITOS-ATOMICOS-JAMES-CLEAR.pdf" target="_blank">Descargar PDF</a></p>
+            </div>
+            <div class="book">
+                <img src="imagenes/lider-360.jpg" alt="Líder 360">
+                <p><strong>Líder 360</strong> - John C. Maxwell</p>
+                <p>📅 31 de enero al 28 de febrero 2025</p>
+            </div>
+        </div>
     </section>
 
     <section>
-        <h2 class="section-title">📖 Avances de Libros Actuales</h2>
-        <ul class="progress-list">
-            <li><strong>Hábitos Atómicos</strong> - James Clear: 0%</li>
-            <li><strong>Líder 360</strong> - John C. Maxwell: 0%</li>
-        </ul>
+        <h2 class="section-title">🎥 Videos Recomendados</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1SGQOUMXQFw?si=IRqztPLX5C9iTI89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RIb29ENeLgU?si=q3zqg4lA7JTEPJKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p style="text-align: center;"><em>Ambos videos son de YouTube subidos por Pablo Lomeli "El Ninja Cerebral" altamente recomendados.</em></p>
     </section>
 
     <section>
-        <h2 class="section-title">🏆 Reconocimientos y Logros</h2>
-        <p>OBJETIVO ANUAL: Leer 10 libros.</p>
+        <h2 class="section-title">📝 Comparte tu Testimonio</h2>
+        <a href="https://forms.gle/TU_FORMULARIO" class="cta-button">Deja tu Testimonio</a>
     </section>
 
     <section>
-        <h2 class="section-title">📅 Calendario de Próximas Lecturas</h2>
-        <p>*31 de marzo al 30 de abril*: <em>Organízate con Eficacia</em> - David Allen.</p>
-    </section>
-
-    <section>
-        <h2 class="section-title">👥 Número de Socios</h2>
-        <p>Actualmente, el club cuenta con <strong>13 socios</strong>.</p>
-    </section>
-
-    <section>
-        <h2 class="section-title">📸 Fotos y Testimonios</h2>
-        <p><em>Próximamente...</em></p>
+        <h2 class="section-title">👥 Únete a la Comunidad</h2>
+        <a href="https://chat.whatsapp.com/TU_GRUPO" class="cta-button">Unirse a WhatsApp</a>
     </section>
 
     <footer>
