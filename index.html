@@ -15,8 +15,18 @@
         header {
             background-color: #6c5b7b;
             color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        header div {
+            text-align: center;
         }
         header h1 {
             margin: 0;
@@ -28,14 +38,15 @@
             font-size: 1.5rem;
             color: #6c5b7b;
             margin-bottom: 10px;
+            text-align: center;
         }
         .book-container {
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 20px;
             justify-content: center;
         }
-        .book {
+        .book-info {
             background: white;
             padding: 15px;
             border-radius: 8px;
@@ -43,8 +54,8 @@
             width: 45%;
             text-align: center;
         }
-        .book img {
-            max-width: 100%;
+        .book-image {
+            max-width: 200px;
             height: auto;
             border-radius: 5px;
         }
@@ -79,17 +90,20 @@
 </head>
 <body>
     <header>
-        <h1>Club de Lectura: CRACKS GDL</h1>
-        <p>"VIVIR SIN LEER ES PELIGROSO, PORQUE OBLIGA A CONFORMARSE CON LA VIDA"</p>
-        <p>Fecha de creación del club: 28/01/2025</p>
+        <img src="imagenes/logo-club.jpg" alt="Logo del Club">
+        <div>
+            <h1>Club de Lectura: CRACKS GDL</h1>
+            <p>"VIVIR SIN LEER ES PELIGROSO, PORQUE OBLIGA A CONFORMARSE CON LA VIDA"</p>
+            <p>Fecha de creación del club: 28/01/2025</p>
+        </div>
     </header>
 
     <section>
         <h2 class="section-title">👥 Miembros del club de lectura: 144 (Actualizado al 30/01/2025)</h2>
         <h2 class="section-title">📚 Libro Objetivo del Mes</h2>
         <div class="book-container">
-            <div class="book">
-                <img src="imagenes/habitos-atomicos.jpg" alt="Hábitos Atómicos">
+            <img class="book-image" src="imagenes/habitos-atomicos.jpg" alt="Hábitos Atómicos">
+            <div class="book-info">
                 <p><strong>Hábitos Atómicos</strong> - James Clear</p>
                 <p>👥 Miembros participantes: 34</p>
                 <p>📅 31 de enero al 28 de febrero 2025</p>
