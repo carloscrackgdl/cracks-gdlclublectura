@@ -15,8 +15,18 @@
         header {
             background-color: #6c5b7b;
             color: white;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        header div {
+            text-align: center;
         }
         header h1 {
             margin: 0;
@@ -28,17 +38,47 @@
             font-size: 1.5rem;
             color: #6c5b7b;
             margin-bottom: 10px;
+            text-align: center;
         }
-        .book-list, .progress-list {
-            list-style-type: none;
-            padding: 0;
+        .book-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
         }
-        .book-list li, .progress-list li {
+        .book-info {
             background: white;
-            margin: 10px 0;
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: center;
+        }
+        .book-image {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        .cta-button {
+            display: block;
+            width: 250px;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #355c7d;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
         }
         footer {
             background-color: #355c7d;
@@ -50,47 +90,57 @@
 </head>
 <body>
     <header>
-        <h1>Club de Lectura: CRACKS GDL</h1>
-        <p>"VIVIR SIN LEER ES PELIGROSO, PORQUE OBLIGA A CONFORMARSE CON LA VIDA"</p>
-        <p>Fecha de creación del club: 28/01/2025</p>
+        <div style="text-align: center;">
+            <img src="imagenes/logo-club.jpg" alt="Logo del Club" style="width: 120px; height: auto; margin-bottom: 10px;">
+            <h1>Club de Lectura: CRACKS GDL</h1>
+            <p>"VIVIR SIN LEER ES PELIGROSO, PORQUE OBLIGA A CONFORMARSE CON LA VIDA"</p>
+            <p>Fecha de creación del club: 28/01/2025</p>
+        </div>
     </header>
 
     <section>
-        <h2 class="section-title">📚 Libros Objetivos del Mes</h2>
-        <ul class="book-list">
-            <li><strong>Hábitos Atómicos</strong> - James Clear<br>Fecha de lectura: 31 de enero al 28 de febrero 2025<br>Número de lectores: <em>0</em> (por actualizar)</li>
-            <li><strong>Líder 360</strong> - John C. Maxwell<br>Fecha de lectura: 31 de enero al 28 de febrero 2025<br>Número de lectores: <em>0</em> (por actualizar)</li>
-        </ul>
+        <h2 class="section-title">👥 Miembros del club de lectura: 156 (Actualizado a 12/03/2025)</h2>
     </section>
-
+    
     <section>
-        <h2 class="section-title">📖 Avances de Libros Actuales</h2>
-        <ul class="progress-list">
-            <li><strong>Hábitos Atómicos</strong> - James Clear: 0%</li>
-            <li><strong>Líder 360</strong> - John C. Maxwell: 0%</li>
-        </ul>
+        <h2 class="section-title">Libro de Febrero</h2>
+        <div class="book-container">
+            <img class="book-image" src="imagenes/habitos-atomicos.jpg" alt="Hábitos Atómicos">
+            <div class="book-info">
+                <p><strong>Hábitos Atómicos</strong> - James Clear</p>
+                <p><strong>META CUMPLIDA</strong></p>
+                <p>👥 Miembros participantes: 34</p>
+                <p>📅 31 de enero al 28 de febrero 2025</p>
+                <p>📚 Objetivo de lectura diario: 11.6 páginas</p>
+                <p>📚 Material disponible en: <a href="https://drive.google.com/drive/folders/13fk5IxBRjzblBYNWwVt4_b92KGsN1H07?usp=sharing" target="_blank">Ver Material</a></p>
+            </div>
+        </div>
     </section>
-
+    
     <section>
-        <h2 class="section-title">🏆 Reconocimientos y Logros</h2>
-        <p>OBJETIVO ANUAL: Leer 10 libros.</p>
+        <h2 class="section-title">Libro de Marzo</h2>
+        <div class="book-container">
+            <img class="book-image" src="imagenes/lider-360.jpg" alt="Líder 360">
+            <div class="book-info">
+                <p><strong>Líder 360</strong> - John C. Maxwell</p>
+                <p>👥 Miembros participantes: 18</p>
+                <p>📅 11 de marzo al 31 de marzo</p>
+                <p>📚 Objetivo de lectura diario: 15 páginas</p>
+                <p>📚 Material disponible en: <a href="https://drive.google.com/drive/folders/1CLvh4FzA1nedA4iKuK8KG2YdyGo3iHPS?usp=sharing" target="_blank">Ver Material</a></p>
+            </div>
+        </div>
     </section>
-
+    
     <section>
-        <h2 class="section-title">📅 Calendario de Próximas Lecturas</h2>
-        <p>*31 de marzo al 30 de abril*: <em>Organízate con Eficacia</em> - David Allen.</p>
+        <h2 class="section-title">🎥 Videos Recomendados</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1SGQOUMXQFw" title="🖊️ 7 Ejercicios de LECTURA RÁPIDA Que te Harán LEER MÁS LIBROS | Curso de Lectura" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RIb29ENeLgU" title="👉 Cómo Leer un Libro desde Cero (Método Completo en 7 Pasos) | Curso de Lectura #6" frameborder="0" allowfullscreen></iframe>
+        </div>
     </section>
-
-    <section>
-        <h2 class="section-title">👥 Número de Socios</h2>
-        <p>Actualmente, el club cuenta con <strong>13 socios</strong>.</p>
-    </section>
-
-    <section>
-        <h2 class="section-title">📸 Fotos y Testimonios</h2>
-        <p><em>Próximamente...</em></p>
-    </section>
-
+    
     <footer>
         <p>© 2025 Club de Lectura: CRACKS GDL. Todos los derechos reservados.</p>
         <p>Creado por CMRA</p>
